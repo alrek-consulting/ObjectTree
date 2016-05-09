@@ -41,11 +41,19 @@ ul.tree{
     line-height: 1.5em;vertical-align: middle;
 }
 
+.tree li ul {
+    background: rgba(0,0,0,0.4);
+    width: fit-content;
+    overflow: hidden;
+    max-width: 200px;
+    overflow: hidden;
+}
+
 .tree li::before{
     background-image: url("../img/Property.png");
     background-size: 16px 16px;
     background-repeat: no-repeat;
-    margin-left: -16px;
+    margin-left: -14px;
     content: "\00a0\00a0\00a0\00a0\00a0" attr(data-property) "\00a0";
  }
  

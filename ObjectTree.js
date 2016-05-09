@@ -1,6 +1,6 @@
 "use strict";
 
-Object.getByString = function(obj, prop) {   
+Object.getByString = function(obj, prop){   
     prop = prop.replace(/\[(\w+)\]/g, '.$1');
     prop = prop.replace(/^\./, '');
     prop = prop.split('.');
@@ -15,7 +15,7 @@ Object.getByString = function(obj, prop) {
     return obj;
 }
 
-Object.setByString = function(obj, prop, value) {
+Object.setByString = function(obj, prop, value){
     if(typeof prop === 'string'){
         console.log(prop);
         prop = prop.replace(/\[(\w+)\]/g, '.$1');
@@ -30,6 +30,9 @@ Object.setByString = function(obj, prop, value) {
     }
 }
 
+var checkRange = function(y, min, max){
+    return (y >= min && y <= max);
+}
 
 function ObjectTree(obj){
     
