@@ -42,7 +42,6 @@ ul.tree{
 }
 
 .tree li ul {
-    background: rgba(0,0,0,0.4);
     width: fit-content;
     overflow: hidden;
     max-width: 200px;
